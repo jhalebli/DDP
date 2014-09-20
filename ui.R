@@ -8,7 +8,8 @@ shinyUI(fixedPage(
       sliderInput('hdi', 'Human Development Index (poverty level)',value = c(0.4,1.0), min = 0.4, max = 1, step = .1,),
       helpText("Use the Human Development Index slider to",
                "limit the relative poverty range of the countries",
-               "summarized after filtering by decile")
+               "summarized after filtering by decile."),
+      p(em("Documentation can be found",a("here",href="help.html")))
       ),
     mainPanel(
       h3(textOutput('text1')),

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WorldGDP-PPP</title>
+</head>
+<body>
+The WorldGDP-PPP applications takes world population and GDP data and breaks the data into deciles based
+on population.  It uses the rworldmap package to display that data as a bubble-based heat map onto a
+mercator map projection of the world.  The data can be filterd by deciles by choosing a minimum decile range
+and a maximum decile range.  If the lower decile range is set to 1, for example, it will start with the
+lowest 10% of the countries in the list by population and if the maximum is set to 8, it will include all
+the countries above the minimum set up to but not including the top 20% of countries by population. <p>
+
+The HDI (Human Development Index) is an index created by the United Nations Development Programme which represents
+a composite calculated index based on relative life expectancy, mean years of schooling, and gross national
+income per capita, as expressed in PPP (Purchasing Power Parity) dollars.  For countries whose data is available,
+HDI current does not drop below 0.4, where 1.0 is the relative maximum index that a country may be assigned.  The application allows the user to filter according to a minimum and maximum HDI index and eliminate countries outside
+the lower or upper bounds. <p>
+
+The size of the bubble located in the centroid of each country represents the relative population size of each
+country in comparison with the list being summarized, while the color represents the relative GDP per capita expressed
+in PPP.  The application also counts the number of countries who meet the criteria set by the decile and HDI
+sliders.  Not all countries in the data are displayed as some countries do not have a supplied GDP per capita (PPP) available in the data (set to 'n/a'). <p>
+</body>
+</html>
