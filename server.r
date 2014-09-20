@@ -38,7 +38,7 @@ shinyServer(
       hdi <- input$hdi
       ctout <- ctwdt[ctwdt$hdi<=hdi[2] & ctwdt$hdi>=hdi[1],]
       ctout <- ctout[ctout$qua<=decile[2] & ctout$qua >= decile[1],]
-      paste('Number of countries specified: ',nrow(ctout))
+      paste('Number of countries displayed: ',nrow(ctout), 'of', nrow(ctwdt))
     })
   }
 )

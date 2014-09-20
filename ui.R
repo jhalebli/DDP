@@ -11,10 +11,11 @@ shinyUI(fixedPage(
                "summarized after filtering by decile")
       ),
     mainPanel(
-      imageOutput('newHist'),
-      textOutput('text1'),
+      h3(textOutput('text1')),
       helpText("GDP is based in PPP dollars, that is, Purchasing",
-               "Power Parity dollars.")
+               "Power Parity dollars. Some countries are not available",
+               "because data was not supplied."),
+      imageOutput('newHist')
     )
   )
 ))
